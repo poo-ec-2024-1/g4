@@ -50,3 +50,14 @@ Para atingir esses objetivos, a equipe de desenvolvimento seguirá uma metodolog
   - Preparação para o lançamento do aplicativo, estratégias de marketing e campanhas de divulgação.
 - **Manutenção e Atualizações**
   - Monitoramento do desempenho do aplicativo, coleta de feedback dos usuários e lançamento de atualizações para melhorias contínuas.
+
+## Seção 3 - Equipe
+
+- **Asaphe N. R. O. Braz**
+- **Daniel Kenji Tomo Watanabe**
+- **Thales Jaime Nascimento De Paula**
+- **Yuri Cassiano Matsuoka**
+
+## Seção 4 - Modelagem Inicial
+
+### Diagrama de Classes
