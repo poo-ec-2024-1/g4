@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Usuario
+comment1.params=nome\ email\ senha
+comment1.target=Usuario(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=produto
+comment2.target=void\ adicionarProdutoAoCarrinho(Produto)
+comment3.params=
+comment3.target=Pedido\ finalizarCompra()
+comment4.params=
+comment4.target=java.lang.String\ getNome()
+numComments=5

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Pedido
+comment1.params=usuario\ produtos
+comment1.target=Pedido(Usuario,\ java.util.List)
+comment2.params=novoStatus
+comment2.target=void\ atualizarStatus(java.lang.String)
+comment3.params=
+comment3.target=java.util.List\ getProdutos()
+numComments=4

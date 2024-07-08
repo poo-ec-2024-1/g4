@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Entrega
+comment1.params=pedido\ endereco\ horario
+comment1.target=Entrega(Pedido,\ java.lang.String,\ java.lang.String)
+comment2.params=novoStatus
+comment2.target=void\ atualizarStatus(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getEndereco()
+comment4.params=
+comment4.target=java.lang.String\ getHorario()
+numComments=5

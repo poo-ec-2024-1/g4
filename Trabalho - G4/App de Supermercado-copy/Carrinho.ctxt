@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Carrinho
+comment1.params=
+comment1.target=Carrinho()
+comment2.params=produto
+comment2.target=void\ adicionarProduto(Produto)
+comment3.params=
+comment3.target=void\ esvaziarCarrinho()
+comment4.params=
+comment4.target=java.util.List\ getProdutos()
+numComments=5
