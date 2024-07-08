@@ -47,10 +47,10 @@ Para atingir esses objetivos, a equipe de desenvolvimento seguirá uma metodolog
 
 ## Seção 3 - Equipe
 
-- **Asaphe N. R. O. Braz**
-- **Daniel Kenji Tomo Watanabe**
-- **Thales Jaime Nascimento De Paula**
-- **Yuri Cassiano Matsuoka**
+- **Asaphe N. R. O. Braz - Desenvolvedor**
+- **Daniel Kenji Tomo Watanabe - Testador**
+- **Thales Jaime Nascimento De Paula - Líder**
+- **Yuri Cassiano Matsuoka - Analista**
 
 ## Seção 4 - Modelagem Inicial
 
