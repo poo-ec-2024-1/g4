@@ -1,19 +1,27 @@
-Documentação do Projeto: Aplicativo de Supermercado 
+Documentação do Projeto: Aplicativo de Supermercado
+
 Seção 1 - Introdução
+
 Justificativa
+
 Com o avanço da tecnologia e a crescente adoção de dispositivos móveis, o comportamento dos consumidores tem mudado significativamente. Cada vez mais pessoas buscam soluções práticas e rápidas para suas necessidades diárias, incluindo a compra de produtos de supermercado. A pandemia de COVID-19 também acelerou essa tendência, destacando a importância de serviços de entrega eficientes e de qualidade.
 
 Descrição do Problema
+
 Os consumidores enfrentam diversos desafios ao fazer compras em supermercados, como filas longas, falta de produtos, dificuldade em encontrar ofertas e promoções, além da necessidade de carregar compras pesadas. Para os supermercados, a gestão eficiente do estoque, a fidelização de clientes e a competição com grandes redes de varejo são problemas constantes.
 
 Motivação
+
 A criação de um aplicativo que simplifique o processo de compra e entrega de produtos de supermercado pode solucionar muitos desses problemas. Um aplicativo eficiente pode melhorar a experiência do usuário, aumentar a conveniência, economizar tempo e proporcionar um serviço de entrega rápido e confiável. Além disso, pode ajudar os supermercados a gerenciar melhor seu estoque e oferecer promoções personalizadas, aumentando a satisfação e a fidelização dos clientes.
 
 Seção 2 - Plano
+
 Objetivo Geral
+
 Desenvolver um aplicativo de supermercado que facilite o processo de compra e entrega de produtos, proporcionando uma experiência de usuário intuitiva e eficiente, com foco na conveniência e satisfação do cliente.
 
 Objetivos Específicos
+
 Facilidade de Uso:
 
 Criar uma interface amigável e intuitiva, que permita aos usuários navegar facilmente pelo aplicativo e encontrar os produtos desejados com rapidez.
