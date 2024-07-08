@@ -21,22 +21,16 @@ Desenvolver um aplicativo de supermercado que facilite o processo de compra e en
    - Criar uma interface amigável e intuitiva, que permita aos usuários navegar facilmente pelo aplicativo e encontrar os produtos desejados com rapidez.
    
 2. **Funcionalidades de Pesquisa e Filtro**
-   - Implementar funcionalidades avançadas de pesquisa e filtros que permitam aos usuários encontrar produtos específicos, ofertas e promoções com facilidade.
+   - Implementar funcionalidades de pesquisa e filtros que permitam aos usuários encontrar produtos específicos, ofertas e promoções com facilidade.
    
 3. **Carrinho de Compras e Pagamento**
    - Desenvolver um sistema de carrinho de compras eficiente e métodos de pagamento seguros, incluindo opções de pagamento digital como cartões de crédito, débito e carteiras virtuais.
    
 4. **Gestão de Entregas**
-   - Criar um sistema de gestão de entregas que permita aos usuários escolher horários de entrega convenientes e acompanhar o status de suas encomendas em tempo real.
-   
-5. **Fidelização de Clientes**
-   - Implementar um sistema de pontos e recompensas para incentivar a fidelização dos clientes, além de ofertas e promoções personalizadas com base no histórico de compras.
+   - Criar um sistema de gestão de entregas que permita aos usuários acompanhar o horários de entrega convenientes e o status de suas encomendas em tempo real.
 
-6. **Gestão de Estoque**
+5. **Gestão de Estoque**
    - Desenvolver ferramentas de gestão de estoque para ajudar os supermercados a monitorar a disponibilidade de produtos e evitar rupturas de estoque.
-   
-7. **Feedback e Suporte ao Cliente**
-   - Estabelecer canais de feedback e suporte ao cliente dentro do aplicativo para resolver rapidamente quaisquer problemas e melhorar continuamente a experiência do usuário.
 
 ### Metodologia
 Para atingir esses objetivos, a equipe de desenvolvimento seguirá uma metodologia ágil, dividida nas seguintes fases:
