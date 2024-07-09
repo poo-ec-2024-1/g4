@@ -7,6 +7,8 @@ Asaphe N. R. O. Braz - Desenvolvedor Geral (Backend e Frontend)
 Daniel Kenji Tomo Watanabe - Testador
 Thales Jaime Nascimento De Paula - Líder - RT
 Yuri Cassiano Matsuoka - Analista de Sistemas
+
+
 INSTRUÇÕES PARA O USUÁRIO:
 1. Criar um Usuário
 Primeiro, você precisa criar um usuário com nome, email e senha. Este usuário terá seu próprio carrinho de compras.
@@ -18,6 +20,7 @@ Após adicionar todos os produtos desejados ao carrinho, finalize a compra para 
 Depois de criar um pedido, defina o endereço e o horário da entrega.
 5. Exibir Informações do Pedido e Entrega
 Você pode exibir as informações do pedido e da entrega, como o nome do usuário, os produtos no pedido, o endereço e o horário da entrega.
+
 
 A classe Main contém o método main que é o ponto de entrada do programa. Ele cria um usuário, alguns produtos, adiciona esses produtos ao carrinho do usuário, finaliza a compra para criar um pedido, simula uma entrega e exibe informações sobre o pedido e a entrega no console.
 Resumo
