@@ -1,5 +1,3 @@
-Claro! Aqui está o texto formatado para o GitHub:
-
 # Aplicativo de Supermercado
 
 ## Objetivo do Projeto
