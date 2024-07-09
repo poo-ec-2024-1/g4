@@ -47,7 +47,7 @@ Para atingir esses objetivos, a equipe de desenvolvimento seguirá uma metodolog
 
 ## Seção 3 - Equipe
 
-- **Asaphe N. R. O. Braz - Desenvolvedor Geral (Bakend e Frontend)**
+- **Asaphe N. R. O. Braz - Desenvolvedor Geral (Backend e Frontend)**
 - **Daniel Kenji Tomo Watanabe - Testador**
 - **Thales Jaime Nascimento De Paula - Líder - RT**
 - **Yuri Cassiano Matsuoka - Analista de Sistemas**
