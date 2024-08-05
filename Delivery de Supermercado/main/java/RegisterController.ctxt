@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=RegisterController
-comment1.params=
-comment1.target=void\ handleRegisterButtonAction()
-comment2.params=
-comment2.target=void\ handleGoToShoppingButtonAction()
-comment3.params=type\ title\ message
-comment3.target=void\ showAlert(javafx.scene.control.Alert.AlertType,\ java.lang.String,\ java.lang.String)
-numComments=4
