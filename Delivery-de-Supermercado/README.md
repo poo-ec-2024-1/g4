@@ -1,156 +1,79 @@
-# Planejamento do Projeto: Aplicativo de Supermercado
+# Relatório de Análise de Código - Anotações de Thales.
 
-## Seção 1 - Introdução
+## Informações do Projeto
+- **Líder do Projeto**: Thales Jaime Nascimento De Paula
+- **Projeto**: Aplicativo de Delivery de Supermercado
+- **Tecnologias Utilizadas**: Java, JavaFX, SQLite, Scene Builder
 
-### Justificativa
-Com o avanço da tecnologia e a crescente adoção de dispositivos móveis, o comportamento dos consumidores tem mudado significativamente. Cada vez mais pessoas buscam soluções práticas e rápidas para suas necessidades diárias, incluindo a compra de produtos de supermercado. A pandemia de COVID-19 também acelerou essa tendência, destacando a importância de serviços de entrega eficientes e de qualidade.
+## Análise Geral
 
-### Descrição do Problema
-Os consumidores enfrentam diversos desafios ao fazer compras em supermercados, como filas longas, falta de produtos, dificuldade em encontrar ofertas e promoções, além da necessidade de carregar compras pesadas. Para os supermercados, a gestão eficiente do estoque, a fidelização de clientes e a competição com grandes redes de varejo são problemas constantes.
+### MainApp.java
+- **Descrição**: Ponto de entrada da aplicação, configura o palco principal e inicializa o banco de dados.
+- **Comentários**:
+  - Carrega a interface principal (`main.fxml`) e define o título e tamanho da janela.
+  - Inicializa o banco de dados antes de iniciar a aplicação JavaFX.
+- **Pontos Fortes**:
+  - Estrutura bem organizada, separando claramente a inicialização do banco de dados e a configuração da interface.
+- **Sugestões**:
+  - Adicionar tratamento de exceções ao carregar o arquivo FXML para capturar e lidar com possíveis erros.
 
-### Motivação
-A criação de um aplicativo que simplifique o processo de compra e entrega de produtos de supermercado pode solucionar muitos desses problemas. Um aplicativo eficiente pode melhorar a experiência do usuário, aumentar a conveniência, economizar tempo e proporcionar um serviço de entrega rápido e confiável. Além disso, pode ajudar os supermercados a gerenciar melhor seu estoque e oferecer promoções personalizadas, aumentando a satisfação e a fidelização dos clientes.
+### RegisterController.java
+- **Descrição**: Controlador responsável pelo registro de novos usuários com validações básicas e navegação para a tela de compras.
+- **Comentários**:
+  - Inclui validações para campos vazios e exibição de alertas para informar o usuário sobre o status do registro.
+  - Permite a navegação para a tela de compras (`shopping.fxml`).
+- **Pontos Fortes**:
+  - Uso adequado de alertas para feedback ao usuário.
+- **Sugestões**:
+  - Adicionar validações mais robustas para a senha, como critérios de complexidade.
+  - Separar a lógica de navegação (mudança de cena) da lógica de registro para melhorar a modularidade e facilitar testes.
 
-## Seção 2 - Plano
+### DatabaseManager.java
+- **Descrição**: Gerenciador do banco de dados usando SQLite, com métodos para inicialização e inserção de usuários.
+- **Comentários**:
+  - Cria uma tabela `users` se ela não existir.
+  - Possui um método para inserir novos usuários no banco de dados.
+- **Pontos Fortes**:
+  - Implementação clara e direta das operações de banco de dados necessárias.
+- **Sugestões**:
+  - Considerar a adição de métodos para outras operações de CRUD (Create, Read, Update, Delete) para maior flexibilidade no futuro.
+  - Adicionar tratamento de exceções mais detalhado para fornecer feedback específico sobre erros e facilitar a depuração.
 
-### Objetivo Geral
-Desenvolver um aplicativo de supermercado que facilite o processo de compra e entrega de produtos, proporcionando uma experiência de usuário intuitiva e eficiente, com foco na conveniência e satisfação do cliente.
+### MainController.java
+- **Descrição**: Controlador principal responsável pela navegação entre diferentes cenas (registro, carrinho, delivery).
+- **Comentários**:
+  - Permite a navegação para as telas de registro (`register.fxml`), compras (`shopping.fxml`) e delivery (`delivery.fxml`).
+- **Pontos Fortes**:
+  - Centralização da navegação em um controlador principal.
+- **Sugestões**:
+  - Melhorar o gerenciamento de estágios para evitar a abertura de múltiplas janelas e manter uma navegação mais fluida e consistente.
 
-### Objetivos Específicos
-1. **Facilidade de Uso**
-   - Criar uma interface amigável e intuitiva, que permita aos usuários navegar facilmente pelo aplicativo e encontrar os produtos desejados com rapidez.
-   
-2. **Funcionalidades de Pesquisa e Filtro**
-   - Implementar funcionalidades de pesquisa e filtros que permitam aos usuários encontrar produtos específicos, ofertas e promoções com facilidade.
-   
-3. **Carrinho de Compras e Pagamento**
-   - Desenvolver um sistema de carrinho de compras eficiente e métodos de pagamento seguros, incluindo opções de pagamento digital como cartões de crédito, débito e carteiras virtuais.
-   
-4. **Gestão de Entregas**
-   - Criar um sistema de gestão de entregas que permita aos usuários acompanhar o horários de entrega convenientes e o status de suas encomendas em tempo real.
+### ShoppingController.java
+- **Descrição**: Controlador para a tela de compras, permitindo adicionar produtos ao carrinho e prosseguir para a tela de delivery.
+- **Comentários**:
+  - Inicializa a lista de produtos com itens estáticos.
+  - Permite adicionar produtos selecionados ao carrinho e navegar para a tela de delivery (`delivery.fxml`).
+- **Pontos Fortes**:
+  - Funcionalidade básica de gerenciamento de carrinho implementada.
+- **Sugestões**:
+  - Adicionar funcionalidade de busca de produtos para melhorar a usabilidade.
+  - Implementar remoção de itens do carrinho para oferecer maior controle ao usuário.
 
-5. **Gestão de Estoque**
-   - Desenvolver ferramentas de gestão de estoque para ajudar os supermercados a monitorar a disponibilidade de produtos e evitar rupturas de estoque.
+### DeliveryController.java
+- **Descrição**: Controlador para a tela de delivery, permitindo inserir o endereço de entrega.
+- **Comentários**:
+  - Captura o endereço inserido e exibe uma mensagem de confirmação no console.
+- **Pontos Fortes**:
+  - Implementação simples e direta para captura do endereço.
+- **Sugestões**:
+  - Adicionar validações para o endereço de entrega, como formato e campos obrigatórios.
+  - Implementar a lógica de confirmação do pedido e atualização do status no banco de dados para completar o fluxo de pedido.
 
-### Metodologia
-Para atingir esses objetivos, a equipe de desenvolvimento seguirá uma metodologia ágil, dividida nas seguintes fases:
-- **Planejamento e Pesquisa**
-  - Coleta de requisitos, análise de mercado e estudo de concorrentes.
-- **Design e Prototipagem**
-  - Criação de wireframes, design da interface do usuário e protótipos interativos.
-- **Desenvolvimento**
-  - Implementação das funcionalidades planejadas, testes contínuos e ajustes conforme necessário.
-- **Lançamento e Marketing**
-  - Preparação para o lançamento do aplicativo, estratégias de marketing e campanhas de divulgação.
-- **Manutenção e Atualizações**
-  - Monitoramento do desempenho do aplicativo, coleta de feedback dos usuários e lançamento de atualizações para melhorias contínuas.
+---
 
-## Seção 3 - Equipe
+## Conclusão
+O código está bem estruturado e segue boas práticas de organização e modularização. As interfaces foram definidas claramente utilizando Scene Builder, facilitando a manutenção e evolução do projeto. Algumas melhorias podem ser feitas, principalmente em termos de validação e tratamento de exceções, para garantir uma aplicação mais robusta e resiliente. Conforme fui desenvolvendo esse aplicativo eu pervebi o quão dificil ia ser cumprir toda a proposta que fizemos no começo do projeto, optando por desenvolver primeiro a parte visual e depois adaptar o codigo para a sua funcionalidade, como lider eu fiquei encarregado de unir o grupo e participei do desenvolvimento do codigo em varias etapas como no desenvolvimento Backend e Frontend.
 
-- **Yuri Cassiano Matsuoka - Desenvolvedor Geral (Backend e Frontend)**
-- **Daniel Kenji Tomo Watanabe - Testador**
-- **Thales Jaime Nascimento De Paula - Líder - RT**
-- **Asaphe N. R. O. Braz - Analista de Sistemas**
+Com varias adições e refinamentos, visando o mercado de trabalho, o aplicativo de delivery de supermercado estará bem preparado para oferecer uma experiência de usuário intuitiva e eficiente além de inovadora.
 
-## Seção 4 - Modelagem Inicial
-
-### Diagrama de Classes
-```mermaid
-classDiagram
-    class Usuario {
-        -String nome
-        -String email
-        -String senha
-        +registrar()
-        +login()
-        +atualizarPerfil()
-    }
-
-    class Produto {
-        -String nome
-        -double preco
-        -int quantidade
-        -String descricao
-        -String categoria
-        +adicionarProduto()
-        +atualizarProduto()
-        +removerProduto()
-    }
-
-    class Carrinho {
-        -Map<Produto, int> itens
-        +adicionarProduto(Produto p, int quantidade)
-        +removerProduto(Produto p)
-        +calcularTotal()
-        +finalizarCompra()
-    }
-
-    class Pedido {
-        -Usuario usuario
-        -List<Produto> produtos
-        -String status
-        -Date data
-        +atualizarStatus()
-        +cancelarPedido()
-    }
-
-    class Entrega {
-        -Pedido pedido
-        -String endereco
-        -String horario
-        -String status
-        +atualizarStatus()
-        +agendarEntrega()
-    }
-
-    Usuario "1" --> "many" Pedido
-    Pedido "1" --> "many" Produto
-    Pedido "1" --> "1" Entrega
-    Carrinho "1" --> "many" Produto
-    Usuario "1" --> "1" Carrinho
-```
-
-### Diagrama de Sequência: Fluxo de Compra
-```mermaid
-sequenceDiagram
-    participant Usuario
-    participant Carrinho
-    participant Produto
-    participant Pedido
-    participant Entrega
-
-    Usuario->>+Produto: Buscar Produto
-    Produto-->>-Usuario: Exibir Produto
-    Usuario->>+Carrinho: Adicionar Produto ao Carrinho
-    Carrinho-->>-Usuario: Produto Adicionado
-    Usuario->>+Carrinho: Verificar Carrinho
-    Carrinho-->>-Usuario: Exibir Itens do Carrinho
-    Usuario->>+Carrinho: Finalizar Compra
-    Carrinho-->>-Usuario: Exibir Resumo da Compra
-    Usuario->>+Pedido: Criar Pedido
-    Pedido-->>-Usuario: Pedido Criado
-    Pedido->>+Entrega: Agendar Entrega
-    Entrega-->>-Pedido: Entrega Agendada
-    Usuario->>+Entrega: Acompanhar Status da Entrega
-    Entrega-->>-Usuario: Status da Entrega
-```
-
-### Casos de Uso
-#### Cadastro de Usuário
-1. **Principal:** Usuário
-2. **Objetivo:** Registrar um novo usuário no sistema.
-3. **Como Funciona:**
-   - O usuário acessa a tela de cadastro.
-   - O usuário insere suas informações (nome, email, senha).
-   - O sistema valida as informações.
-   - O sistema registra o usuário e exibe uma mensagem de sucesso.
-
-#### Compra de Produto
-1. **Principal:** Usuário
-2. **Objetivo:** Realizar a compra de produtos.
-3. **Como Funciona:**
-   - O usuário busca produtos.
-   - O usuário adiciona produtos ao carrinho.
-   - O usuário visualiza o carrinho.
-   - O usuário finaliza a compra.
-   - O sistema cria um pedido e confirma a compra.
+---
