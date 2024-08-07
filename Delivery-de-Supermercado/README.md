@@ -1,5 +1,7 @@
 # Relatório de Análise de Código - Anotações de Thales.
 
+- **Apresentação**: https://drive.google.com/file/d/1ntfX3Xc7Uf-TM5vnvHtfmgqq8BDv3SFZ/view?usp=sharing
+
 ## Informações do Projeto
 - **Líder do Projeto**: Thales Jaime Nascimento De Paula
 - **Projeto**: Aplicativo de Delivery de Supermercado
