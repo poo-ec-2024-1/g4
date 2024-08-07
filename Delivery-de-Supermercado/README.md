@@ -162,3 +162,77 @@ Com varias adições e refinamentos, visando o mercado de trabalho, o aplicativo
 - Há um bom potencial para melhorias e expansão do aplicativo, o que pode ser explorado em trabalhos futuros.
 
 ---
+
+# Relatório de Análise de Código - Anotações de Daniel Kenji.
+
+## Informações do Projeto
+- **Testador do Projeto**: Daniel Kenji Tomo Watanabe
+- **Projeto**: Aplicativo de Delivery de Supermercado
+- **Tecnologias Utilizadas**: Java, JavaFX, SQLite, Scene Builder
+
+## 1. Atribuição de Cargo e Tarefas
+
+**Tarefas Atribuídas:**
+- Testagem dos controllers;
+- Implementação de novas bibliotecas para o teste de unidade:
+  - `testfx-junit5-4.0.16-alpha.jar`
+  - `testfx-junit5-4.0.16-alpha.jar`
+- Análise da lógica e estrutura.
+
+**Responsabilidades:**
+- Garantir a funcionalidade do programa;
+- Resolver erros dentro do código.
+
+**O que foi exercido na prática:**
+- Implementação e pesquisa de bibliotecas JAVA;
+- Criação de testes de unidade no BlueJ;
+- Manuseio com Handlers.
+
+## 2. Contribuição de Acordo com a Atribuição
+
+**O que foi cumprido:**
+- Testagem dos controllers;
+- Commit das mudanças;
+- Correção de bugs.
+
+**Principais Commits/Posts/Documentos:**
+1. **Commit:** DK/AddTestes - Adicionar as classes "teste" dentro do programa.
+
+**O que não deu para cumprir:**
+- Auxílio na parte de front-end;
+- Revisão e simplificação do código.
+
+**Principais Dificuldades:**
+- Trabalhar em cima de uma estrutura complexa;
+- A linguagem JAVA;
+- Manuseio com Handlers.
+
+## 3. Contribuição Além do Atribuído
+
+**Como Ajudei a Equipe:**
+- Ideias para a implementação do projeto;
+- Cumprir a parte designada;
+- Ajudar na finalização e entrega do projeto.
+
+**Principais Commits/Posts/Documentos Relevantes:**
+1. **Post:** Discussão sobre a experiência do projeto.
+
+**Ajuda a Outros:**
+- Auxílio no planejamento para a finalização das tarefas;
+- Discussão de ideias.
+
+## 4. Considerações Gerais
+
+**O que Aprendi:**
+- Aprimoramento na habilidade com JAVA;
+- Descobrimento de novas funcionalidades;
+- Utilização de novas bibliotecas e testes com handlers.
+
+**Trabalhos Futuros Pendentes:**
+- Melhor adaptação do front-end;
+- Feedback mais eficaz do "Register", "Delivery" e "Shopping".
+
+**Conclusões:**
+- O projeto foi desafiador, já que mesmo trabalhando com programação, senti dificuldade na implementação de métodos, classes, testes, etc;
+- Aprimorei meus conhecimentos na arquitetura MVC em geral;
+- Mais proximidade com meus colegas de equipe.
